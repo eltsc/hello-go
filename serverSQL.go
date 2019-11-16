@@ -43,7 +43,7 @@ func initDB(){
 	var err error
 	// Connect to the postgres db
 	//you might have to change the connection string to add your database credentials
-    db, err = sql.Open("mysql", "root:***@tcp(127.0.0.1:3306)/***")
+    db, err = sql.Open("mysql", "root:elad@tcp(10.0.0.18:3306)/elad")
 	if err != nil {
 		panic(err)
 	}
